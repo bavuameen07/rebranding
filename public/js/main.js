@@ -133,7 +133,7 @@
   /* ---------- Smooth anchor offset ---------- */
   document.querySelectorAll('a[href^="#"]').forEach((a) => {
     a.addEventListener('click', (ev) => {
-      const id = a.getAttribute('hash');
+      const id = a.getAttribute('href');
       if (!id) return;
       const target = document.querySelector(id);
       if (!target) return;
